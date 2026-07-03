@@ -72,7 +72,7 @@ public abstract class ModPlatformModule extends AbstractModule {
 
     @Provides
     @Singleton
-    public SkinApplier skinApplier(EventBus eventBus) {
-        return new ModSkinApplier(eventBus);
+    public SkinApplier skinApplier(EventBus eventBus, FloodgateApi api) {
+        return new ModSkinApplier(eventBus, api);
     }
 }

@@ -55,7 +55,7 @@ tasks {
             }
         )
         dependsOn(processResources)
-        archiveBaseName.set("floodgate-neoforge")
+        archiveBaseName.set("edufloodgate-neoforge")
     }
 
     modrinth {

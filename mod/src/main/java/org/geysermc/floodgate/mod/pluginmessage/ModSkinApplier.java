@@ -12,6 +12,7 @@ import net.minecraft.server.level.ChunkMap;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import org.checkerframework.checker.nullness.qual.NonNull;
+import org.geysermc.floodgate.api.FloodgateApi;
 import org.geysermc.floodgate.api.event.skin.SkinApplyEvent;
 import org.geysermc.floodgate.api.player.FloodgatePlayer;
 import org.geysermc.floodgate.core.event.EventBus;
@@ -31,9 +32,11 @@ import static org.geysermc.floodgate.api.event.skin.SkinApplyEvent.SkinData;
 public final class ModSkinApplier implements SkinApplier {
 
     private final EventBus eventBus;
+    private final FloodgateApi api;
 
-    public ModSkinApplier(EventBus eventBus) {
+    public ModSkinApplier(EventBus eventBus, FloodgateApi api) {
         this.eventBus = eventBus;
+        this.api = api;
     }
 
     @Override
@@ -75,6 +78,13 @@ public final class ModSkinApplier implements SkinApplier {
             // Skin is applied - now it's time to refresh the player for everyone.
             for (ServerPlayer otherPlayer : MinecraftServerHolder.get().getPlayerList().getPlayers()) {
                 boolean samePlayer = otherPlayer == bedrockPlayer;
+                // Bedrock observers glitch when a player entity is removed and
+                // re added mid session, and their own pipeline refreshes skins
+                // anyway; skip them, mirroring the Spigot platform's education
+                // tweak.
+                if (!samePlayer && api.isFloodgatePlayer(otherPlayer.getUUID())) {
+                    continue;
+                }
                 if (!samePlayer) {
                     // TrackedEntity#broadcastRemoved doesn't actually remove them from seenBy
                     entry.removePlayer(otherPlayer);

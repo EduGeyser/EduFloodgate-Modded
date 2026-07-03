@@ -48,7 +48,7 @@ tasks {
                 include("LICENSE")
             }
         )
-        archiveBaseName.set("floodgate-fabric")
+        archiveBaseName.set("edufloodgate-fabric")
     }
 
     modrinth {
