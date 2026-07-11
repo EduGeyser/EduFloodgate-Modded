@@ -8,6 +8,6 @@ public class ModMixinConfigPluginImpl {
     }
 
     public static boolean applyProxyFix() {
-        return false;
+        return true;
     }
 }

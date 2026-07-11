@@ -9,6 +9,6 @@ public class ModMixinConfigPluginImpl {
     }
 
     public static boolean applyProxyFix() {
-        return FabricLoader.getInstance().isModLoaded("fabricproxy-lite");
+        return true;
     }
 }
