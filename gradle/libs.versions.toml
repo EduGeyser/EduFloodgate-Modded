@@ -14,7 +14,7 @@ bstats = "3.0.2"
 configutils = "1.0-SNAPSHOT"
 mixin = "0.8.5"
 asm = "5.2"
-floodgate = "2.2.5-edu.1"
+floodgate = "2.2.5-edu.2"
 
 # fabric
 fabric-loader = "0.19.3"

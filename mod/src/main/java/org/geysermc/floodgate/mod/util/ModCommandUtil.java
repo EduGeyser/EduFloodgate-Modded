@@ -99,15 +99,21 @@ public final class ModCommandUtil extends CommandUtil {
 
     @Override
     public boolean whitelistPlayer(UUID uuid, String username) {
+        // the whitelist is not thread safe and writes its file on every change, and the
+        // pending whitelist calls this from the async handshake pool, so run it on the
+        // server thread like kickPlayer above
         NameAndId nameAndId = new NameAndId(uuid, username);
-        MinecraftServerHolder.get().getPlayerList().getWhiteList().add(new UserWhiteListEntry(nameAndId));
+        MinecraftServerHolder.get().execute(() ->
+                MinecraftServerHolder.get().getPlayerList().getWhiteList()
+                        .add(new UserWhiteListEntry(nameAndId)));
         return true;
     }
 
     @Override
     public boolean removePlayerFromWhitelist(UUID uuid, String username) {
         NameAndId nameAndId = new NameAndId(uuid, username);
-        MinecraftServerHolder.get().getPlayerList().getWhiteList().remove(nameAndId);
+        MinecraftServerHolder.get().execute(() ->
+                MinecraftServerHolder.get().getPlayerList().getWhiteList().remove(nameAndId));
         return true;
     }
 }
