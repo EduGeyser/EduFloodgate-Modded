@@ -1,0 +1,230 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.geysermc.floodgate",
+    "module": "core",
+    "version": "2.2.5-edu.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.geysermc.floodgate",
+          "module": "api",
+          "version": {
+            "requires": "2.2.5-edu.4"
+          }
+        },
+        {
+          "group": "org.geysermc.configutils",
+          "module": "configutils",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.google.inject",
+          "module": "guice",
+          "version": {
+            "requires": "7.0.0"
+          }
+        },
+        {
+          "group": "com.nukkitx.fastutil",
+          "module": "fastutil-short-object-maps",
+          "version": {
+            "requires": "8.5.3"
+          }
+        },
+        {
+          "group": "com.nukkitx.fastutil",
+          "module": "fastutil-int-object-maps",
+          "version": {
+            "requires": "8.5.3"
+          }
+        },
+        {
+          "group": "org.java-websocket",
+          "module": "Java-WebSocket",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "org.incendo",
+          "module": "cloud-core",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "org.bstats",
+          "module": "bstats-base",
+          "version": {
+            "requires": "3.2.1"
+          }
+        },
+        {
+          "group": "io.netty",
+          "module": "netty-transport",
+          "version": {
+            "requires": "4.2.19.Final"
+          }
+        },
+        {
+          "group": "io.netty",
+          "module": "netty-codec",
+          "version": {
+            "requires": "4.2.19.Final"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-2.2.5-edu.4.jar",
+          "url": "core-2.2.5-edu.4.jar",
+          "size": 274958,
+          "sha512": "78f2c2b070aec981925c57be25a31091477513da47fbc607f2963fca46ee1e61f2792564ae6a04cec2d286090f6417457fb0c1a4d6a56ebbcaac8198bfc17356",
+          "sha256": "6cab8070f1a4154c75b623622593329d858809009f1bf8b6872b8ae4ac7f5ad6",
+          "sha1": "b3832f52c1454d99e82ca9497caa457a7b35b978",
+          "md5": "1f452b1fd248c27812b1f2d63f0964f0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.geysermc.floodgate",
+          "module": "api",
+          "version": {
+            "requires": "2.2.5-edu.4"
+          }
+        },
+        {
+          "group": "org.geysermc.configutils",
+          "module": "configutils",
+          "version": {
+            "requires": "1.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.google.inject",
+          "module": "guice",
+          "version": {
+            "requires": "7.0.0"
+          }
+        },
+        {
+          "group": "com.nukkitx.fastutil",
+          "module": "fastutil-short-object-maps",
+          "version": {
+            "requires": "8.5.3"
+          }
+        },
+        {
+          "group": "com.nukkitx.fastutil",
+          "module": "fastutil-int-object-maps",
+          "version": {
+            "requires": "8.5.3"
+          }
+        },
+        {
+          "group": "org.java-websocket",
+          "module": "Java-WebSocket",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "org.incendo",
+          "module": "cloud-core",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "org.bstats",
+          "module": "bstats-base",
+          "version": {
+            "requires": "3.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-2.2.5-edu.4.jar",
+          "url": "core-2.2.5-edu.4.jar",
+          "size": 274958,
+          "sha512": "78f2c2b070aec981925c57be25a31091477513da47fbc607f2963fca46ee1e61f2792564ae6a04cec2d286090f6417457fb0c1a4d6a56ebbcaac8198bfc17356",
+          "sha256": "6cab8070f1a4154c75b623622593329d858809009f1bf8b6872b8ae4ac7f5ad6",
+          "sha1": "b3832f52c1454d99e82ca9497caa457a7b35b978",
+          "md5": "1f452b1fd248c27812b1f2d63f0964f0"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "core-2.2.5-edu.4-javadoc.jar",
+          "url": "core-2.2.5-edu.4-javadoc.jar",
+          "size": 4679373,
+          "sha512": "d38cdd52a20a531545feba530c84164c48c320c62daf6a23a891802e5da8aecf56a0f3a35ef3b3895fc8ed2ae7eb41ec82d160173d334f96f4611b36bfea0b07",
+          "sha256": "ce5a3124c5fd29d30cb8f501442cc77fda79472215b4081e57f35b3c386cf81d",
+          "sha1": "abc8ead6b086b09c974671ca9976879aa4f6c418",
+          "md5": "0c7e9ae4ad59c05163dd6aa7dbf96dbd"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "core-2.2.5-edu.4-sources.jar",
+          "url": "core-2.2.5-edu.4-sources.jar",
+          "size": 233425,
+          "sha512": "9aa3b2f5fc5f883aef9a495e0471ecade47e77d32cb986b8088c5bc7d955f7a55440e7b82b20db60d15f0dece55d3dec20a36513e2a1add8118c101377231462",
+          "sha256": "f425b30a56cc586fb98e176db9f2f7925f947030df5e6bdbea23a61240f87731",
+          "sha1": "9da55d5f993ca71e8bb002519c52727f5577b21d",
+          "md5": "df4c2a0363f6f7b2f2057ec27c661ef3"
+        }
+      ]
+    }
+  ]
+}

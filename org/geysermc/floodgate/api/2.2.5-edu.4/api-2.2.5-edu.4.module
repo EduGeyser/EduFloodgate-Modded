@@ -1,0 +1,146 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.geysermc.floodgate",
+    "module": "api",
+    "version": "2.2.5-edu.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.geysermc.geyser",
+          "module": "common",
+          "version": {
+            "requires": "2.12.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.geysermc.cumulus",
+          "module": "cumulus",
+          "version": {
+            "requires": "1.1.2"
+          }
+        },
+        {
+          "group": "org.geysermc.event",
+          "module": "events",
+          "version": {
+            "requires": "1.1-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "api-2.2.5-edu.4.jar",
+          "url": "api-2.2.5-edu.4.jar",
+          "size": 21240,
+          "sha512": "c9c9545426db9bef5a15d153b097ed430fe96a97913112282046486a03d8ce2e8376840301d25d47f97da3c4365192aed22c0b35c180a9bfaa711b33fcad01e1",
+          "sha256": "31e8cf869be34eb9497dc3b2a41ee69b57dd17e2db6ed2e95f84a1761fc02031",
+          "sha1": "4157d8915efe7e8d27fa5a74b61df2342237edc2",
+          "md5": "a0b40a0d2770831582842186c2632278"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.geysermc.geyser",
+          "module": "common",
+          "version": {
+            "requires": "2.12.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.geysermc.cumulus",
+          "module": "cumulus",
+          "version": {
+            "requires": "1.1.2"
+          }
+        },
+        {
+          "group": "org.geysermc.event",
+          "module": "events",
+          "version": {
+            "requires": "1.1-SNAPSHOT"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "api-2.2.5-edu.4.jar",
+          "url": "api-2.2.5-edu.4.jar",
+          "size": 21240,
+          "sha512": "c9c9545426db9bef5a15d153b097ed430fe96a97913112282046486a03d8ce2e8376840301d25d47f97da3c4365192aed22c0b35c180a9bfaa711b33fcad01e1",
+          "sha256": "31e8cf869be34eb9497dc3b2a41ee69b57dd17e2db6ed2e95f84a1761fc02031",
+          "sha1": "4157d8915efe7e8d27fa5a74b61df2342237edc2",
+          "md5": "a0b40a0d2770831582842186c2632278"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "api-2.2.5-edu.4-javadoc.jar",
+          "url": "api-2.2.5-edu.4-javadoc.jar",
+          "size": 4242196,
+          "sha512": "74a7056b85c08c5e8d8c29dab1dee03b4bd8dfa1135b82cbe94d2431502707e1030cdbd98d27f28233ccc06789705dba96ff8e338cae1a19617e58fb30a1d001",
+          "sha256": "1102fe6389530562ebad4f61897ff56dc1774fccdfd263efbf60f6252a09ba22",
+          "sha1": "d92b1d7793420c408d4bd165538738fb94a3c406",
+          "md5": "087a2376ec5cf852f844b273b70dd43a"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "api-2.2.5-edu.4-sources.jar",
+          "url": "api-2.2.5-edu.4-sources.jar",
+          "size": 33467,
+          "sha512": "c0bc7084ccfdfc92ac2242ea6604df5259a08d55ac7a8666f6dc25a31a207f5a6f9e0eb2beb187e0b778ba388b1b0100485da6671b1d2548e71ba749beb63d05",
+          "sha256": "a32e4bf2bb71e80af4a6c33f215aba80d4789a87db2cefea25a80eb3d89744c7",
+          "sha1": "a3ac5c4c7b0a742b8025ae9a3edc7576ce0ad5bb",
+          "md5": "b6538799b285d614eb411f05eeaa6f5c"
+        }
+      ]
+    }
+  ]
+}
