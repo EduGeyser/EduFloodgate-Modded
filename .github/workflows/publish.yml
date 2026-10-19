@@ -8,7 +8,7 @@ jobs:
       - name: Setup Gradle
         uses: GeyserMC/actions/setup-gradle-composite@master
         with:
-          setup-java_java-version: 25
+          setup-java_java-version: 27
 
       - name: Build Floodgate-Modded
         run: ./gradlew build

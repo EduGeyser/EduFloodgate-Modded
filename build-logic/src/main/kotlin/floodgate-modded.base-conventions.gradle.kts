@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    compileOnly("org.checkerframework:checker-qual:3.19.0")
+    compileOnly("org.checkerframework:checker-qual:4.3.1")
 }
 
 indra {
@@ -17,6 +17,7 @@ indra {
 
     javaVersions {
         target(25)
+        minimumToolchain(27)
     }
 }
 
